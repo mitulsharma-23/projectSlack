@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slack Work</title>
+    <link rel="stylesheet" href="./style.css"> 
+</head>
+<body>
+    <div>
+        <h1 data-testid="mitulsharma_23">Slack Name: Mitul Sharma</h1>
+    </div>
+    <div>
+        <img src="./PfP.jfif" alt="mitulsharma_23" data-testid="slackDisplayImage" width="200" height="200">
+    </div>
+    <div>
+        <script type="text/javascript">
+            var myDate = new Date();
+            var myDay = myDate.getDay();
+            
+            // Array of days.
+            var weekday = ['Sunday', 'Monday', 'Tuesday',
+                'Wednesday', 'Thursday', 'Friday', 'Saturday'
+            ];
+            document.write("Today is : " + weekday[myDay]);
+            document.write("<br/>");
+            
+            // get hour value.
+            var hours = myDate.getHours();
+            var ampm = hours >= 12 ? 'PM' : 'AM';
+            hours = hours % 12;
+            hours = hours ? hours : 12;
+            var minutes = myDate.getMinutes();
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            var myTime = hours + "" + ":" + minutes + 
+                ":" + myDate.getSeconds() + " " + ampm;
+            document.write("\tCurrent time is : " + myTime);
+        </script>
+    </div>
+    <div>
+        <h3 data-testid="myTrack">My Track: Frontend</h3>
+    </div>
+
+    <div>
+        <a href="https://www.google.com/" target="_blank">Github Link:</a>
+    </div>
+</body>
+</html>
