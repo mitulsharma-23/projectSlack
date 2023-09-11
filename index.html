@@ -21,8 +21,6 @@
         var weekday = ['Sunday', 'Monday', 'Tuesday',
             'Wednesday', 'Thursday', 'Friday', 'Saturday'
         ];
-        document.write("Today is : " + weekday[myDay]);
-        document.write("<br/>");
     
         // get hour value.
         var hours = myDate.getHours();
@@ -36,12 +34,16 @@
     
         // Add the data-testid attribute to the div element.
         document.write('<div data-testid="currentDayOfTheWeek">');
+        document.write("\tCurrent day is : " + weekday[myDay]);
+        document.write('</div>');
+        document.write("<br/>");
+        document.write('<div data-testid="currentUTCTime">');
         document.write("\tCurrent time is : " + myTime);
         document.write('</div>');
     </script>
     
     <div>
-        <h3 data-testid="myTrack">My Track: Frontend Track</h3>
+        <h3 data-testid="myTrack">My Track: Frontend</h3>
     </div>
 
     <div>
