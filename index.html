@@ -8,7 +8,7 @@
 </head>
 <body>
     <div>
-        <h1 data-testid="mitulsharma_23">Slack Name: Mitul Sharma</h1>
+        <h1 data-testid="slackUserName">Slack Name: Mitul Sharma</h1>
     </div>
     <div>
         <img src="./PfP.jfif" alt="mitulsharma_23" data-testid="slackDisplayImage" width="200" height="200">
@@ -30,7 +30,7 @@
         var minutes = myDate.getMinutes();
         minutes = minutes < 10 ? '0' + minutes : minutes;
         var myTime = hours + "" + ":" + minutes +
-            ":" + myDate.getSeconds() + " " + ampm;
+            ":" + myDate.getMilliseconds() + " " + ampm;
     
         // Add the data-testid attribute to the div element.
         document.write('<div data-testid="currentDayOfTheWeek">');
